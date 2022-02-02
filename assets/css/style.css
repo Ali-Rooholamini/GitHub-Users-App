@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Roboto+Condensed&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    /* font-weight: bold; */
+}
+body{
+    background-color: #5A189A;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Search Bar Styles */
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    max-width: 350px;
+    height:46px;
+    font-size: 22px;
+    border-radius: 7px 0px 0px 7px;
+    padding: 10px 10px;
+    background-color: #6D23B6;
+}
+.search button{
+    outline: none;
+    border: none;
+    box-shadow: none;
+    background-color: #6D23B6;
+    cursor: pointer;
+    height:46px;
+    font-size: 18px;
+    border-radius: 0px 7px 7px 0px;
+    padding: 5px 20px 5px 5px;
+}
+.search button > i{
+    transition: 150ms ease-in;
+}
+.search button:hover > i {
+    opacity: 0.3;
+}
+
+/* main Section */
+.mainSec{
+    width: 650px;
+    padding: 10px 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(218, 218, 218);
+    background-color: #3C096C;
+}
+.profile-img{
+    border: 1px solid black;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    box-shadow: 2px 2px 5px 1px #10002B;
+}
+.profile-img img{
+    border-radius: 50%;
+}
+.user{
+    margin: 25px 0px 25px 0px;
+    width: 420px;
+}
+.userName{
+    margin: 0px 0px 25px 0px;
+}
+.userDescription{
+    margin: 0px 0px 25px 0px;
+    text-align: justify;
+}
+.userInfo{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* media query */
+@media screen and (max-width: 650px) {
+    .search input{
+        width: 255px;
+    }
+    .mainSec{
+        flex-direction: column;
+        width: 300px;
+    }
+    .profile-img{
+        margin-top: 10px;
+    }
+    .user{
+        width: 280px;
+    }
+    .userName{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .userDescription{
+        padding: 0px 3px;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+    .userInfo{
+        font-size: 14px;
+        padding: 0px 3px;
+    }
+}
